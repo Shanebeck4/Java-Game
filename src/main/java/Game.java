@@ -172,7 +172,7 @@ public class Game extends JPanel implements ActionListener
     }
   }
   
-  public Image getBackgroundImage(){
+  public Image cd(){
     ImageIcon i = new ImageIcon(getClass().getResource(background));
     Image image = i.getImage();
     Image newImage = resizeImage(image, 800, 650);
@@ -185,9 +185,9 @@ public class Game extends JPanel implements ActionListener
    try{
     //Open up audio file
     Clip clip = AudioSystem.getClip();
-     URL audioUrl = ClassLoader.getSystemResource(musicFile);
-     File audioFile = new File(audioUrl.toURI());
-    AudioInputStream inputStream = AudioSystem.getAudioInputStream(audioFile);
+    AudioInputStream inputStream =
+            AudioSystem.getAudioInputStream(
+                    ClassLoader.getSystemResource(musicFile));
     clip.open(inputStream);
     clip.start();
     clip.loop(Clip.LOOP_CONTINUOUSLY);
