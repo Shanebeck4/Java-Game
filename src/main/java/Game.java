@@ -36,8 +36,8 @@ import javax.swing.JTextField;
 
 public class Game extends JPanel implements ActionListener
 {
-  private String background = "/images/background.png";
-  static String musicFile = "/audio/RenaissanceEndo.wav";
+  private String background = "images/background.png";
+  static String musicFile = "audio/RenaissanceEndo.wav";
   
   Timer gameLoopTimer;
   Player p;
