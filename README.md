@@ -12,4 +12,4 @@ You can use Maven to build this project.
 
 Once built, you can execute the built JAR file.
 
-    java -jar target/java-game-1.0-SNAPSHOT.jar
+    java -jar target/coin-getter-1.0-SNAPSHOT.jar
